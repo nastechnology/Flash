@@ -21,8 +21,9 @@ USE_PKGBUILD=1
 include /usr/local/share/luggage/luggage.make
 
 TITLE=repack_flash
-REVERSE_DOMAIN=net.apesseekingknowledge.fubar
+REVERSE_DOMAIN=org.nacswildcats
 PAYLOAD=clone_flash_player
+PACKAGE_VERSION=11.9.900.152
 
 clone_flash_player: flash_player_snapshot.tar.gz
 	sudo ${TAR} xvf flash_player_snapshot.tar.gz -C ${WORK_D}
